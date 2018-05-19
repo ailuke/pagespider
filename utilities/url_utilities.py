@@ -1,7 +1,7 @@
 import re
 import string
 from urllib.request import urlopen
-
+#file_path = "input.txt"
 from bs4 import BeautifulSoup
 
 
