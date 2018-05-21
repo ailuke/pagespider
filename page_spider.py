@@ -15,9 +15,9 @@ def main(database: str, url_list_file: str):
         big_word_list.extend(words)
 
     # database code
-    os.chdir(os.path.direname(__file__))
+    os.chdir(os.path.dirname(__file__))
     path = os.path.join(os.getcwd(), "words.db")
-    database_utilities.create_database(path=path)
+    database_utilities.create_database(database_path=path)
     database_utilities.save_words_to_database(database_path=path, words_list=big_word_list)
 
 

@@ -25,7 +25,7 @@ def save_words_to_database(database_path: str, words_list: list):
             if count > 0:
                 sql = "update words set usage_count = usage_count + 1 where word = '" + word + "'"
             else:
-                sql = "inset into words(word) values ('" + word + "')"
+                sql = "insert into words(word) values ('" + word + "')"
             cur.execute(sql)
-        conn.close()
+        #conn.close()
         print("Database save complete!")

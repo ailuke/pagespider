@@ -23,14 +23,15 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="ea94f88c-e22b-48ce-9189-43e6570baab0">
+        <schema name="main" object-types="column, constraint, index, table, dataset trigger, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="ea94f88c-e22b-48ce-9189-43e6570baab0">
-      <console name="words.db" type="STANDARD"><![CDATA[CREATE TABLE words (
-    word TEXT PRIMARY KEY NOT NULL,
-    usage_count INT DEFAULT 1 NOT NULL
-);]]></console>
+      <console name="words.db" type="STANDARD"><![CDATA[select * from words order by usage_count desc]]></console>
     </connection>
     <connection id="ffec6d39-cab0-43b4-92f9-ab646ef79174">
       <console name="Connection" type="STANDARD" />
